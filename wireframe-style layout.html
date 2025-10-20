@@ -1,0 +1,36 @@
+<div style="width:100%; background:#f9fafb; padding:20px; font-family:Segoe UI, sans-serif;">
+  <h2 style="text-align:center; color:#222;">RailTrack Performance Dashboard Layout (Wireframe)</h2>
+  <p style="text-align:center; color:#555;">Suggested Power BI layout for a clean and balanced dashboard</p>
+
+  <div style="display:grid; grid-template-columns: 1fr 1fr; gap:20px; margin-top:30px;">
+    <div style="background:#fff; border:1px solid #ddd; padding:15px; text-align:center;">
+      <h3>Distance Traveled Over Time</h3>
+      <p><em>Line Chart</em><br>X: Date | Y: Sum of distance_km</p>
+    </div>
+
+    <div style="background:#fff; border:1px solid #ddd; padding:15px; text-align:center;">
+      <h3>Fuel Consumption Over Time</h3>
+      <p><em>Line Chart</em><br>X: Date | Y: Sum of fuel_used_l</p>
+    </div>
+
+    <div style="background:#fff; border:1px solid #ddd; padding:15px; text-align:center;">
+      <h3>Maintenance Distribution (%)</h3>
+      <p><em>Donut Chart</em><br>Category: maintenance_flag | Value: Count of railcar_id</p>
+    </div>
+
+    <div style="background:#fff; border:1px solid #ddd; padding:15px; text-align:center;">
+      <h3>Key Metrics (KPIs)</h3>
+      <ul style="list-style:none; padding:0; color:#333;">
+        <li><strong>Total Railcars</strong> — Count of railcar_id</li>
+        <li><strong>Avg Operating Temp (°C)</strong> — Average(temperature_c)</li>
+        <li><strong>Avg Fuel Efficiency (km/L)</strong> — distance_km / fuel_used_l</li>
+        <li><strong>Maintenance Rate (%)</strong> — (Sum(maintenance_flag)/Count(railcar_id))*100</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="margin-top:30px; text-align:center; color:#444;">
+    <p><strong>Filters:</strong> Date | Railcar ID | Maintenance Flag</p>
+    <p style="font-size:13px; color:#777;">Optional: Add slicers and a 'Last Updated' field at the bottom right</p>
+  </div>
+</div>
